@@ -1,0 +1,22 @@
+{
+  "name": "can-svg",
+  "description": "A SVG feature detector for can.js",
+  "author": {
+    "name": "André König",
+    "email": "andre.koenig@konexmedia.com"
+  },
+  "version": "1.0.0",
+  "repository": {
+    "url": "git@github.com:canjs/can.git"
+  },
+  "license": "MIT",
+  "main": "./build/can-svg.min.js",
+  "ignore": [
+      "**/.*",
+      "node_modules",
+      "index.spec.js",
+      "gulpfile.js",
+      "karma.conf.js",
+      "package.json"
+  ]
+}
