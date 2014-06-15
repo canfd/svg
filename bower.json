@@ -7,7 +7,7 @@
   },
   "version": "1.0.0",
   "repository": {
-    "url": "git@github.com:canjs/can.git"
+    "url": "git@github.com:canjs/svg.git"
   },
   "license": "MIT",
   "main": "./build/can-svg.min.js",
