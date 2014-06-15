@@ -17,6 +17,7 @@
       "index.spec.js",
       "gulpfile.js",
       "karma.conf.js",
-      "package.json"
+      "package.json",
+      "index.js"
   ]
 }
