@@ -16,7 +16,6 @@
 var gulp = require('gulp');
 var sequence = require('run-sequence');
 var jshint = require('gulp-jshint');
-var karma = require('gulp-karma');
 var rimraf = require('gulp-rimraf');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
@@ -47,14 +46,6 @@ gulp.task('lint', function () {
         .pipe(jshint.reporter('default'));
 });
 
-gulp.task('test', function () {
-    return gulp.src(paths.can.concat(paths.source).concat(paths.specs))
-        .pipe(karma({
-            configFile: 'karma.conf.js',
-            action: 'run'
-        }));
-});
-
 gulp.task('clean', function () {
     return gulp.src(paths.build)
         .pipe(rimraf());
@@ -77,4 +68,4 @@ gulp.task('build', function () {
     });
 });
 
-gulp.task('default', ['lint', 'test', 'build']);
+gulp.task('default', ['lint', 'build']);
