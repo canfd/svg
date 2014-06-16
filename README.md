@@ -1,4 +1,4 @@
-# SVG detector for [can.js](https://github.com/canjs) [![Build Status](https://travis-ci.org/canjs/svg.svg?branch=master)](https://travis-ci.org/canjs/svg)
+# SVG detector for [can.js](https://github.com/canjs)
 
 ## Installation
 
