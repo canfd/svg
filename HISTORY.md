@@ -1,4 +1,4 @@
-# UNRELEASED
+# 1.0.1 (2014-06-16)
 
   * Stabilized the `hasFeature` check.
 
