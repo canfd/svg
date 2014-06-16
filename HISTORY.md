@@ -1,6 +1,6 @@
 # UNRELEASED
 
-  * Stabilize the `hasFeature` check.
+  * Stabilized the `hasFeature` check.
 
 # 1.0.0 (2014-06-15)
 
