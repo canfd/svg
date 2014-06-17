@@ -9,9 +9,16 @@
 
 ## Available detections
 
-### can.use('svg:image')
+### can.use('svg:image', callback)
 
 Checks if the browser supports `<img>` tags with SVG files.
+
+```javascript
+can.use('svg:image', function (err, supports) {
+    if (supports) {
+        // Do something special.
+    }
+});
 
 ## Author
 

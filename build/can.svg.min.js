@@ -1,6 +1,6 @@
 /**
- * can-svg - A SVG feature detector for can.js
- * @version v1.0.0
+ * can.svg - A SVG feature detector for can.js
+ * @version 2.0.0
  * @author André König (andre.koenig@konexmedia.com)
  * @license MIT
  *
