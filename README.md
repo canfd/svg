@@ -19,6 +19,7 @@ can.use('svg:image', function (err, supports) {
         // Do something special.
     }
 });
+```
 
 ## Author
 

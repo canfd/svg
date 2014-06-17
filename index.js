@@ -23,7 +23,11 @@
      * 
      * Usage:
      * 
-     *     can.use('svg:image)
+     * can.use('svg:image', function (err, supports) {
+     *     if (supports) {
+     *         // Do something special.
+     *     }
+     * });
      *
      */
     can.define('svg:image', {
