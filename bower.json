@@ -10,7 +10,7 @@
     "url": "git@github.com:canjs/svg.git"
   },
   "license": "MIT",
-  "main": "./build/can-svg.min.js",
+  "main": "./build/can.svg.min.js",
   "ignore": [
       "**/.*",
       "node_modules",
