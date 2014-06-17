@@ -1,4 +1,4 @@
-# UNRELEASED
+# 2.0.0 (2014-06-17)
 
   * Upgraded to support `can.js` 2.0.0
 
