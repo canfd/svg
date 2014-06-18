@@ -1,6 +1,6 @@
 /**
  * can.svg - A SVG feature detector for can.js
- * @version 2.0.0
+ * @version 2.0.1
  * @author André König (andre.koenig@konexmedia.com)
  * @license MIT
  *
@@ -30,7 +30,11 @@
      * 
      * Usage:
      * 
-     *     can.use('svg:image)
+     * can.use('svg:image', function (err, supports) {
+     *     if (supports) {
+     *         // Do something special.
+     *     }
+     * });
      *
      */
     can.define('svg:image', {

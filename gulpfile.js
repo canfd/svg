@@ -38,7 +38,7 @@ paths.source = ['index.js'];
 paths.specs = ['index.spec.js'];
 paths.can = ['./node_modules/can/build/can.min.js'];
 
-paths.build = './build';
+paths.dist = './dist';
 
 gulp.task('lint', function () {
     return gulp.src(paths.lintables)
@@ -47,7 +47,7 @@ gulp.task('lint', function () {
 });
 
 gulp.task('clean', function () {
-    return gulp.src(paths.build)
+    return gulp.src(paths.dist)
         .pipe(rimraf());
 });
 
@@ -56,7 +56,7 @@ gulp.task('build', function () {
         return gulp.src(paths.source)
             .pipe(rename(pkg.name + '.js'))
             .pipe(header(banner, {pkg : pkg}))
-            .pipe(gulp.dest(paths.build));        
+            .pipe(gulp.dest(paths.dist));        
     });
     
     sequence('clean', function () {
@@ -64,7 +64,7 @@ gulp.task('build', function () {
             .pipe(rename(pkg.name + '.min.js'))
             .pipe(uglify())
             .pipe(header(banner, {pkg : pkg}))
-            .pipe(gulp.dest(paths.build));
+            .pipe(gulp.dest(paths.dist));
     });
 });
 
